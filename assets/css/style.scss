@@ -1,0 +1,59 @@
+$orange: #dca520;
+$light-orange: #d3b266;
+$white: #ffffff;
+$black: #2c2c2c;
+$grey: #aaaaaa;
+
+@import url(../fonts/bebasneue/bebasneue.css);
+@import url(../fonts/montserrat/montserrat.css);
+
+$monst: "Montserrat";
+$beba: "Bebas Neue";
+
+body {
+    font-size: 24px;
+    line-height: 1.2em;
+    font-family: $monst, serif;
+    background-color: $black;
+    color: $white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.menu {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    background-color: $grey;
+    padding: 10px 0;
+
+}
+
+
+//CALL TO ACTION BUTTON
+
+.call-to-action-button {
+    display: block;
+    width: 60%;
+    max-width: 1000px;
+    font-size: 1em;
+    font-family: $beba;
+    font-weight: bold;
+    background-color: $orange;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    margin: 0 auto 48px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: $light-orange;
+    }
+}
+
+

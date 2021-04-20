@@ -1,0 +1,290 @@
+@import url(../fonts/bebasneue/bebasneue.css);
+@import url(../fonts/montserrat/montserrat.css);
+body {
+  font-size: 24px;
+  line-height: 1.2em;
+  font-family: "Montserrat", serif;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.menu {
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  background-color: #aaaaaa;
+  padding: 10px 0;
+}
+
+.call-to-action-button {
+  display: block;
+  width: 60%;
+  max-width: 1000px;
+  font-size: 1em;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  background-color: #dca520;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  margin: 0 auto 48px;
+  padding: 10px 0;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.call-to-action-button:hover {
+  background-color: #d3b266;
+}
+
+.aboutUsPage h1 {
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  padding-left: 10%;
+  color: #2c2c2c;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.aboutUsPage .banner {
+  width: 70%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #dca520;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUsPage .banner .call-to-action-button {
+  width: 80%;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.aboutUsPage .banner .call-to-action-button:hover {
+  background-color: #414141;
+}
+
+.aboutUsPage .timeline-title {
+  font-family: "Bebas Neue";
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.aboutUsPage .white-section {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  padding: 50px;
+}
+
+.aboutUsPage .white-section .white-wrapper {
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutUsPage .white-section .call-to-action-button {
+  width: 70%;
+  margin-top: 50px;
+}
+
+.aboutUsPage .timeline-section {
+  width: 70%;
+  max-width: 1500px;
+  height: 50px;
+  margin: 20px auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutUsPage .timeline-section .hor-line {
+  width: 100%;
+  height: 7px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.aboutUsPage .timeline-section .hor-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5px;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.aboutUsPage .timeline-section .hor-line::after {
+  content: "";
+  position: absolute;
+  border-right: 5px solid #ffffff;
+  border-top: 5px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: -9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.aboutUsPage .timeline-section .past-timeline {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}
+
+.aboutUsPage .timeline-section .present-timeline {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.aboutUsPage .pop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutUsPage .pop .swiper-slide {
+  height: 20px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #fff;
+}
+
+.aboutUsPage .swiper-container {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.aboutUsPage .two .swiper-slide {
+  width: 40%;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 25px 50px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.466);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.466);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutUsPage .two .swiper-slide .card-time {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #2c2c2c;
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  line-height: 1;
+  padding: 10px;
+  margin-top: -15px;
+  margin-right: -40px;
+}
+
+.aboutUsPage .two .swiper-slide .card-title {
+  color: #2c2c2c;
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.aboutUsPage .two .swiper-slide .card-text {
+  margin-top: 10px;
+  color: #2c2c2c;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.aboutUsPage .two .swiper-slide .card-image {
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+}
+
+.aboutUsPage .swiper-container-horizontal > .swiper-pagination-bullets,
+.aboutUsPage .swiper-pagination-custom,
+.aboutUsPage .swiper-pagination-fraction {
+  bottom: auto;
+  top: -60px;
+  width: 70%;
+  z-index: 3;
+}
+
+.aboutUsPage .swiper-pagination-bullet {
+  background: transparent none repeat scroll 0 0;
+  border: 50px solid #ee0f6f;
+  border-radius: 10px;
+  display: inline-block;
+  height: 10px;
+  opacity: 1;
+  width: 26px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.aboutUsPage .swiper-pagination-bullet-active {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#ee0f6f), to(#f89482)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+  border: medium none;
+  height: 12px;
+  opacity: 1;
+  width: 12px;
+}
+/*# sourceMappingURL=style-about.css.map */

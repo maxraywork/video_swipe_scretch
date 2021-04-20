@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video swiper tabs</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/delete-default.css">
+
+    <link rel="stylesheet" href="assets/css/style-main.css">
+
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <!-- JAVA SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">*MENU*</div>
+    </header>
+    <main>
+         <!-- Paste a video under here -->
+             <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+    <!-- Paste a video above here -->
+        <section class="section-tabs">
+            <div class="tabs-wrap">
+                <div class="tab">
+                    <button class="tab-button" id="basic">basic</button>
+                </div>
+                <div class="tab">
+                    <button class="tab-button" id="premium">premium</button>
+                </div>
+                <div class="tab">
+                    <button class="tab-button" id="ultimate">ultimate</button>
+                </div>
+                <div class="tab">
+                    <button class="tab-button" id="challenge">challenge</button>
+                </div>
+            </div>
+            <div class="bottom-border-tabs"></div>
+        </section>
+        <section class="section-tab-content" id="section-basic">
+            <div class="swiper-container swiper-basic">
+                <div class="swiper-wrapper">
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <!-- Paste a video under here -->
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                                <!-- Paste a video above here -->
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+
+                    </div>
+                </div>
+                <!-- Add class with standart name + name of tab (swiper-button-prev/next-*name of tab*)
+                and add var into "swipe.js" -->
+                <div class="swiper-button-prev swiper-button-prev-basic"></div>
+                <div class="swiper-button-next swiper-button-next-basic"></div>
+
+            </div>
+        </section>
+        <section class="section-tab-content" id="section-premium">
+            <div class="swiper-container swiper-premium">
+                <div class="swiper-wrapper">
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+
+
+                    </div>
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev swiper-button-prev-premium"></div>
+                <div class="swiper-button-next swiper-button-next-premium"></div>
+
+            </div>
+        </section>
+        <section class="section-tab-content" id="section-ultimate">
+            <div class="swiper-container swiper-ultimate">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev swiper-button-prev-ultimate"></div>
+                <div class="swiper-button-next swiper-button-next-ultimate"></div>
+
+            </div>
+        </section>
+        <section class="section-tab-content" id="section-challenge">
+            <div class="swiper-container swiper-challenge">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <section class="video-description">
+                            <video class="slide-video" muted autoplay
+                                poster="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg">
+                                <source src="#" />
+                            </video>
+                            <div class="slide-text">
+                                <h3>Title</h3>
+                                <h4>It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable
+                                    content of a page when
+                                    looking at its layout.</h4>
+                            </div>
+                        </section>
+                        <section class="section-testimonials">
+                            <button class="call-to-action-button">call to action</button>
+
+                            <h2>testimonials</h2>
+                            <div class="arrow-down"></div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <div class="video">
+                                <div style="padding:42.19% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/533583983?autoplay=1&loop=1&color=8f090d&title=0&byline=0&portrait=0&badge=0"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                            </div>
+                            <img src="https://i-a.d-cd.net/_KAAAgBb1eA-1920.jpg" alt="image">
+                            <button class="call-to-action-button">call to action</button>
+
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev swiper-button-prev-challenge"></div>
+                <div class="swiper-button-next swiper-button-next-challenge"></div>
+
+            </div>
+        </section>
+        <!-- //////////////////////////////////////////////////////////////// -->
+    </main>
+
+    <!-- SCRIPTS -->
+
+    <script src="assets/js/swiper-main.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".tab-button").click(function () {
+                var
+                    tabButtons = $(".tab-button"),
+                    thisID = $(this).attr("id"),
+                    tabcontent = $(".section-tab-content");
+
+
+                var prevOpenTab = $(".active-tab-button").attr("id");
+                if (thisID == prevOpenTab) {
+                    return false;
+                }
+                $("#section-" + prevOpenTab).css("display", "none");
+                $(".active-tab-button").removeClass("active-tab-button");
+
+                $("#section-" + thisID).css("display", "block");
+                $(this).addClass("active-tab-button");
+            });
+
+            //  $(".section-tab-content").css("display", "none");
+            $(".tab-button:eq(0)").click();
+        });
+    </script>
+</body>
+
+</html>

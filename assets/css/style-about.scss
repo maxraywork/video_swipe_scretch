@@ -1,0 +1,201 @@
+@import "style";
+
+$width: 70%;
+
+.aboutUsPage {
+  h1 {
+    font-family: $beba;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    padding-left: 10%;
+    color: $black;
+    background-color: $white;
+    font-weight: bold;
+  }
+
+  .banner {
+    width: $width;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: $orange;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .call-to-action-button {
+      width: 80%;
+      background-color: $black;
+      color: $white;
+      margin-top: 50px;
+      margin-bottom: 0;
+      &:hover {
+        background-color: #414141;
+      }
+    }
+  }
+
+  .timeline-title {
+    font-family: $beba;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .white-section {
+    background-color: $white;
+    color: $black;
+    padding: 50px;
+    .white-wrapper {
+      width: $width;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .call-to-action-button {
+      width: $width;
+      margin-top: 50px;
+    }
+  }
+
+  .timeline-section {
+    width: 70%;
+    max-width: 1500px;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hor-line {
+      width: 100%;
+      height: 7px;
+      background-color: $white;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 50px;
+        background-color: $white;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        border-right: 5px solid $white;
+        border-top: 5px solid $white;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        top: -9px;
+        transform: rotate(45deg);
+      }
+    }
+    .past-timeline {
+      width: fit-content;
+      transform: translateX(-50%);
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+    }
+    .present-timeline {
+      position: absolute;
+      right: 0;
+      bottom: -30px;
+      width: fit-content;
+      transform: translateX(50%);
+    }
+  }
+
+
+.pop {
+    display: flex;
+    justify-content: space-between;
+    .swiper-slide {
+        height: 20px;
+        width: 5px;
+        margin-right: 5px;
+        background-color: #fff;
+    }
+}
+
+  .swiper-container {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .two .swiper-slide {
+    width: 40%;
+    min-width: 300px;
+    background-color: $white;
+    padding: 25px 50px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .card-time {
+      align-self: flex-end;
+      background-color: $black;
+      font-weight: bold;
+      font-family: $beba;
+      line-height: 1;
+      padding: 10px;
+      margin-top: -15px;
+      margin-right: -40px;
+    }
+    .card-title {
+      color: $black;
+      font-family: $beba;
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+    .card-text {
+      margin-top: 10px;
+      color: $black;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+    .card-image {
+      margin-top: 25px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: auto;
+    top: -60px;
+    width: 70%;
+    z-index: 3;
+  }
+  .swiper-pagination-bullet {
+    background: transparent none repeat scroll 0 0;
+    border: 50px solid #ee0f6f;
+    border-radius: 10px;
+    display: inline-block;
+    height: 10px;
+    opacity: 1;
+    width: 26px;
+    transition: 0.2s;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+    border: medium none;
+    height: 12px;
+    opacity: 1;
+    width: 12px;
+  }
+}
