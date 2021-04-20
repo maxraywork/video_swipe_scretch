@@ -43,6 +43,16 @@ body {
   background-color: #d3b266;
 }
 
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+  .call-to-action-button {
+    width: 70%;
+    margin: 0 auto 48px;
+  }
+}
+
 .aboutUsPage h1 {
   font-family: "Bebas Neue";
   text-transform: uppercase;
@@ -93,29 +103,15 @@ body {
   text-align: center;
 }
 
-.aboutUsPage .white-section {
-  background-color: #ffffff;
-  color: #2c2c2c;
-  padding: 50px;
-}
-
-.aboutUsPage .white-section .white-wrapper {
-  width: 70%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.aboutUsPage .white-section .call-to-action-button {
-  width: 70%;
-  margin-top: 50px;
-}
-
 .aboutUsPage .timeline-section {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 70%;
   max-width: 1500px;
   height: 50px;
-  margin: 20px auto;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,31 +128,6 @@ body {
   height: 7px;
   background-color: #ffffff;
   position: relative;
-}
-
-.aboutUsPage .timeline-section .hor-line::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 5px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 5px;
-  height: 50px;
-  background-color: #ffffff;
-}
-
-.aboutUsPage .timeline-section .hor-line::after {
-  content: "";
-  position: absolute;
-  border-right: 5px solid #ffffff;
-  border-top: 5px solid #ffffff;
-  width: 20px;
-  height: 20px;
-  right: 0;
-  top: -9px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 
 .aboutUsPage .timeline-section .past-timeline {
@@ -181,34 +152,21 @@ body {
           transform: translateX(50%);
 }
 
-.aboutUsPage .pop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.aboutUsPage .pop .swiper-slide {
-  height: 20px;
-  width: 5px;
-  margin-right: 5px;
-  background-color: #fff;
+.aboutUsPage .full-time-section {
+  position: relative;
 }
 
 .aboutUsPage .swiper-container {
   width: 100%;
-  padding: 60px 0;
+  padding-top: 150px;
+  padding-bottom: 60px;
 }
 
 .aboutUsPage .two .swiper-slide {
   width: 40%;
-  min-width: 300px;
+  min-width: 200px;
   background-color: #ffffff;
   padding: 25px 50px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.466);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.466);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,6 +180,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.aboutUsPage .two .swiper-slide .banner-alert-slide {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  width: 100%;
+  height: 50px;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #dca520;
+  -webkit-animation: slideAlert 1s infinite linear;
+          animation: slideAlert 1s infinite linear;
 }
 
 .aboutUsPage .two .swiper-slide .card-time {
@@ -261,30 +242,148 @@ body {
 .aboutUsPage .swiper-container-horizontal > .swiper-pagination-bullets,
 .aboutUsPage .swiper-pagination-custom,
 .aboutUsPage .swiper-pagination-fraction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: auto;
-  top: -60px;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 70%;
-  z-index: 3;
+  max-width: 1500px;
 }
 
 .aboutUsPage .swiper-pagination-bullet {
-  background: transparent none repeat scroll 0 0;
-  border: 50px solid #ee0f6f;
-  border-radius: 10px;
-  display: inline-block;
-  height: 10px;
+  margin: 0;
+  outline: 0;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 0;
   opacity: 1;
-  width: 26px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  height: 30px;
+  width: 5px;
 }
 
-.aboutUsPage .swiper-pagination-bullet-active {
-  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#ee0f6f), to(#f89482)) repeat scroll 0 0;
-  background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
-  border: medium none;
-  height: 12px;
-  opacity: 1;
-  width: 12px;
+.aboutUsPage .swiper-pagination-bullet:first-child {
+  -webkit-transform: translate(-5px, -10px);
+          transform: translate(-5px, -10px);
+  width: 5px;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+.aboutUsPage .swiper-pagination-bullet:last-child {
+  -webkit-transform: translate(4px, 2px) rotate(45deg);
+          transform: translate(4px, 2px) rotate(45deg);
+  background-color: transparent;
+  border-right: 5px solid #ffffff;
+  border-top: 5px solid #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.aboutUsPage .swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: fadeIn 0.5s ease-in-out;
+          animation: fadeIn 0.5s ease-in-out;
+  background-color: #dca520;
+}
+
+.aboutUsPage .white-section {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  padding: 50px;
+}
+
+.aboutUsPage .white-section .white-wrapper {
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.aboutUsPage .white-section .call-to-action-button {
+  width: 70%;
+  margin-top: 50px;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideAlert {
+  0% {
+    background-color: #dca520;
+  }
+  50% {
+    background-color: #d3b266;
+  }
+  100% {
+    background-color: #dca520;
+  }
+}
+
+@keyframes slideAlert {
+  0% {
+    background-color: #dca520;
+  }
+  50% {
+    background-color: #d3b266;
+  }
+  100% {
+    background-color: #dca520;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutUsPage h1, .aboutUsPage .timeline-title {
+    font-size: 1.5em;
+  }
+  .aboutUsPage .banner {
+    padding: 25px;
+  }
+  .aboutUsPage .two .swiper-slide {
+    padding: 12px 25px;
+  }
+  .aboutUsPage .two .swiper-slide .banner-alert-slide {
+    font-size: .7em;
+    height: 30px;
+    top: -30px;
+  }
+  .aboutUsPage .two .swiper-slide .card-time {
+    margin-top: -8px;
+    margin-right: -20px;
+    padding: 5px;
+  }
+  .aboutUsPage .white-section {
+    padding: 25px;
+  }
 }
 /*# sourceMappingURL=style-about.css.map */

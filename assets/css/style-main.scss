@@ -217,9 +217,6 @@ $line-width: 2px;
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        font-size: 20px;
-    }
 
     .tab {
         width: 25%;
@@ -268,10 +265,5 @@ $line-width: 2px;
     }
 
 
-    .call-to-action-button {
-        width: 70%;
-        margin: 0 auto 48px;
-
-    }
 
 }

@@ -45,27 +45,15 @@ $width: 70%;
     text-align: center;
   }
 
-  .white-section {
-    background-color: $white;
-    color: $black;
-    padding: 50px;
-    .white-wrapper {
-      width: $width;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .call-to-action-button {
-      width: $width;
-      margin-top: 50px;
-    }
-  }
 
   .timeline-section {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 70%;
     max-width: 1500px;
     height: 50px;
-    margin: 20px auto;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,27 +63,6 @@ $width: 70%;
       height: 7px;
       background-color: $white;
       position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 5px;
-        transform: translateY(-50%);
-        width: 5px;
-        height: 50px;
-        background-color: $white;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        border-right: 5px solid $white;
-        border-top: 5px solid $white;
-        width: 20px;
-        height: 20px;
-        right: 0;
-        top: -9px;
-        transform: rotate(45deg);
-      }
     }
     .past-timeline {
       width: fit-content;
@@ -113,28 +80,35 @@ $width: 70%;
     }
   }
 
-
-.pop {
-    display: flex;
-    justify-content: space-between;
-    .swiper-slide {
-        height: 20px;
-        width: 5px;
-        margin-right: 5px;
-        background-color: #fff;
-    }
-}
+  .full-time-section {
+    position: relative;
+  }
 
   .swiper-container {
     width: 100%;
-    padding: 60px 0;
+    padding-top: 60px+50px+40px;
+    padding-bottom: 60px;
   }
   .two .swiper-slide {
+    .banner-alert-slide {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      width: 100%;
+      height: 50px;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $orange;
+      animation: slideAlert 1s infinite linear;
+    }
+
     width: 40%;
-    min-width: 300px;
+    min-width: 200px;
     background-color: $white;
     padding: 25px 50px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.466);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,28 +148,121 @@ $width: 70%;
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
+    display: flex;
+    justify-content: space-between;
     bottom: auto;
-    top: -60px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 70%;
-    z-index: 3;
+    max-width: 1500px;
   }
   .swiper-pagination-bullet {
-    background: transparent none repeat scroll 0 0;
-    border: 50px solid #ee0f6f;
-    border-radius: 10px;
-    display: inline-block;
-    height: 10px;
+    margin: 0;
+    outline: 0;
+    position: relative;
+    background-color: $white;
+    border-radius: 0;
     opacity: 1;
-    width: 26px;
-    transition: 0.2s;
+    height: 30px;
+    width: 5px;
+    &:first-child {
+     transform: translate(-5px, -10px);
+      width: 5px;
+      height: 50px;
+      background-color: $white;
+    }
+    &:last-child {
+      transform: translate(4px , 2px ) rotate(45deg);
+      background-color: transparent;
+      border-right: 5px solid $white;
+      border-top: 5px solid $white;
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .swiper-pagination-bullet-active {
-    background: rgba(0, 0, 0, 0)
-      linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
-    border: medium none;
-    height: 12px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      transition: 0.5s;
+      animation: fadeIn 0.5s ease-in-out;
+      background-color: $orange;
+    }
+  }
+
+  
+  .white-section {
+    background-color: $white;
+    color: $black;
+    padding: 50px;
+    .white-wrapper {
+      width: $width;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .call-to-action-button {
+      width: $width;
+      margin-top: 50px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
-    width: 12px;
+  }
+}
+@keyframes slideAlert {
+  0% {
+    background-color: $orange;
+  }
+  50% {
+    background-color: $light-orange;
+  }
+  100% {
+    background-color: $orange;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutUsPage {
+    h1, .timeline-title {
+      font-size: 1.5em;
+    }
+
+    .banner {
+      padding: 25px;
+    }
+
+   .two .swiper-slide{
+     .banner-alert-slide {
+       font-size: .7em;
+       height: 30px;
+       top: -30px;
+     }
+     padding: 12px 25px;
+
+     .card-time {
+       margin-top: -8px;
+       margin-right: -20px;
+       padding: 5px;
+     }
+   }
+
+
+   .white-section {
+     padding: 25px;
+   }
   }
 }

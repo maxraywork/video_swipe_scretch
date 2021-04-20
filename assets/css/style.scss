@@ -56,4 +56,14 @@ body {
     }
 }
 
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 20px;
+    }
 
+    .call-to-action-button {
+        width: 70%;
+        margin: 0 auto 48px;
+
+    }
+}

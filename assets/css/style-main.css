@@ -43,6 +43,16 @@ body {
   background-color: #d3b266;
 }
 
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+  .call-to-action-button {
+    width: 70%;
+    margin: 0 auto 48px;
+  }
+}
+
 .section-tabs {
   position: relative;
   padding-top: 16px;
@@ -306,9 +316,6 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  body {
-    font-size: 20px;
-  }
   .tab {
     width: 25%;
   }
@@ -340,10 +347,6 @@ body {
   }
   .section-testimonials .video {
     margin-bottom: 24px;
-  }
-  .call-to-action-button {
-    width: 70%;
-    margin: 0 auto 48px;
   }
 }
 /*# sourceMappingURL=style-main.css.map */
